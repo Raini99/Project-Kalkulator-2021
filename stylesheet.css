@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: grey;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+.calculator {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.calculator-screen {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 48px;
+  text-align: right;
+  padding: 0px 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.calculator-keys {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 3px;
+  justify-content: space-between;
+}
+
+.row button {
+  font-size: 32px;
+  width: 24%;
+  height: 80px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  background-color: #616161;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+  transition: ease-in-out 0.5s;
+}
+
+.row button:hover {
+  background-color: #383838;
+}
+
+.row button:active {
+  position: relative;
+  top: 3px;
+}
+
+.row .all-clear,
+.row .zero-btn {
+  width: 50%;
+}
+
+.row .all-clear {
+  background-color: #ff2b2b;
+}
+
+.row .operator,
+.row .equal-sign {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+}
+
+.row .operator:hover {
+  background-color: hsl(32, 67%, 46%);
+}
+
+.row .equal-sign:hover {
+  background-color: #032829;
+}
+
+.row .all-clear:hover {
+  background-color: #032829;
+}
+
+.bottom-buttons {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.bottom-buttons button {
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: white;
+  border: 1px solid rgb(94, 94, 94);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  margin: 7px;
+}
+
+.bottom-buttons button:active {
+  position: relative;
+  top: 3px;
+}
+
+.bottom-buttons button a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  padding: 0.5cm;
+}
+
+a {
+  color: white;
+}
